@@ -68,7 +68,7 @@ let a = 0;
 const z = supplyChanges.length;
 
 while( a < z ) {
-  if( (supplyChanges[a]) > 0 ) {
+  if( supplyChanges[a] > 0 ) {
     console.log('Added', supplyChanges[a++] ,'parts.');
   } else if( supplyChanges[a] < 0 ) {
     console.log('Part count', supplyChanges[a++] + '.');
