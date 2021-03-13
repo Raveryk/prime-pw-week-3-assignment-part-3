@@ -69,10 +69,10 @@ const z = supplyChanges.length;
 
 while( a < z ) {
   if( supplyChanges[a] > 0 ) {
-    console.log('Added', supplyChanges[a++] ,'parts.');
+    console.log('Added', supplyChanges[a] ,'parts.');
   } else if( supplyChanges[a] < 0 ) {
-    console.log('Part count', supplyChanges[a++] + '.');
-  }
+    console.log('Part count', supplyChanges[a] + '.');
+  } a++;
 }
 
 
@@ -80,3 +80,11 @@ while( a < z ) {
 // 9. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
 console.log('9. Total supplies available is:');
+
+
+sum = 0;
+
+for( i=0; i < supplyChanges.length; i++ ) {
+  sum += supplyChanges[i];
+}
+console.log('Total parts:', sum);
