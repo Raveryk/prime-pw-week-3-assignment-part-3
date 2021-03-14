@@ -39,7 +39,7 @@ console.log('6. Showing supplyChanges...');
 
 
 for( i=0; i < supplyChanges.length; i++ ) {
-  let x = supplyChanges[i];
+  let x = supplyChanges[i]; //I know this isn't necessary, I just liked how clean it looked - hopefully it's not technically wrong.
   if( x > 0 ) {
     console.log('Added', x ,'parts.');
   } if ( x < 0 ) {
@@ -80,7 +80,6 @@ while( a < z ) {
 // 9. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
 console.log('9. Total supplies available is:');
-
 
 sum = 0;
 
